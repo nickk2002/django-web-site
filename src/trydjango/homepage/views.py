@@ -5,7 +5,7 @@ from django.http import HttpResponse
 # Create your views here.
 def home_view(request, *args, **kwargs):
     print(request.user)
-    return HttpResponse("<h2>Te iubesc mult de tot!</h2>")
+    return render(request, "index.html", {})
 
 
 def contact_view(*args, **kwargs):
